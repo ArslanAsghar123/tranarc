@@ -29,6 +29,8 @@ dependencies:
   retrofit: ^2.0.0
   flutter_svg: ^0.22.0
   get: ^4.1.4
+  dotted_line: ^3.0.0
+
 
 
 
@@ -73,7 +75,12 @@ flutter:
   fonts:
     - family: Lato
       fonts:
-        - asset: assets/fonts/Lato-Regular.ttf
+        - asset: assets/fonts/lato/Lato-Regular.ttf
+
+    - family: Raleway
+      fonts:
+        - asset: assets/fonts/raleway/Raleway.ttf
+          weight: 400
 
   #   - family: Trajan Pro
   #     fonts:

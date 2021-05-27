@@ -11,7 +11,7 @@ class AppColors {
   static var authenticationEndBtnColor = Color(0xff8CAAC5);
   static var authenticationSubtitleColor = Color(0xffC6D4DD);
   static var authenticationTitleColor = Color(0xffFFFFFF);
-  static var textfieldTextColor = Color(0xff3C3C43);
+  static var textfieldIconColor = Color(0xff3C3C43);
   static var carouselActiveSliderColor = Color(0xff3F85B6);
   static var carouselInActiveSliderColor = Color(0xffF2F2F2);
 
@@ -75,4 +75,47 @@ class AppColors {
   static var btnBackgroudColor = Color(0xff0A314D);
 
   //endregion
+
+  //region gradients
+  static const kPrimaryGradientColor = LinearGradient(
+      begin: Alignment.topCenter,
+      end: Alignment.bottomCenter,
+      colors: [Color(0xff0D3552), Color(0xff337EB3)]);
+
+  static const kSecondaryGradientColor = LinearGradient(
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+    colors: [Color(0xffC9EFFE), Color(0xff6BCEF7)],
+  );
+
+  //endregion
+
+  //region textStyles
+  static const kTitleTextStyle = TextStyle(
+      fontFamily: 'Lato',
+      fontWeight: FontWeight.w400,
+      fontSize: 20,
+      color: Color(0xffC5D4DD));
+  static const kSubTitleTextStyle = TextStyle(
+    fontFamily: 'Raleway',
+    fontWeight: FontWeight.w800,
+    fontSize: 34,
+    color: Color(0xffFFFFFF),
+  );
+  static const kTextfieldTextStyle = TextStyle(
+    fontFamily: 'Lato',
+    fontWeight: FontWeight.w600,
+    fontSize: 14,
+    color: Color(0xff3C3C43),
+  );
+
+  static const kBtnTextStyle = TextStyle(
+    fontFamily: 'Lato',
+    fontWeight: FontWeight.bold,
+    fontSize: 15,
+    color: Colors.black,
+  );
+
+//endregion
+
 }
