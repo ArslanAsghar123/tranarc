@@ -16,31 +16,56 @@ class _LoginFormState extends State<LoginForm> {
     return Form(
       child: Column(
         children: [
-          buildEmailTextFormField(),
-          SizedBox(
-            height: SizeConfig.screenHeight * 0.019,
-          ),
-          buildUsernameTextFormField(),
-          SizedBox(
-            height: SizeConfig.screenHeight * 0.019,
-          ),
+          buildTextFormField(
+            onChanged: (val){},
+              onValidate: (val){},
 
-          buildPasswordTextFormField(),
+              hint: 'Email',
+              svgPic: "assets/mobile/icons/user.svg",
+              obsecureText: false),
+          SizedBox(
+            height: SizeConfig.screenHeight * 0.019,
+          ),
+          buildTextFormField(
+              hint: 'first name',
+              svgPic: "assets/mobile/icons/key.svg",
+              obsecureText: false),
+          SizedBox(
+            height: SizeConfig.screenHeight * 0.019,
+          ),
+          buildTextFormField(
+              hint: 'second name',
+              svgPic: "assets/mobile/icons/key.svg",
+              obsecureText: false),
+          SizedBox(
+            height: SizeConfig.screenHeight * 0.019,
+          ),
+          buildTextFormField(
+              hint: 'password',
+              svgPic: "assets/mobile/icons/key.svg",
+              obsecureText: true),
           SizedBox(
             height: SizeConfig.screenHeight * 0.019,
           ),
           button(context,
               lable: "Create an Account",
-              colour: AppColors.authenticationBtnColors,colourText: Colors.black),
+              colour: AppColors.authenticationBtnColors,
+              colourText: Colors.black,
+              press: () {}),
           SizedBox(
             height: SizeConfig.screenHeight * 0.019,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Container(width: SizeConfig.screenWidth * 0.35, child: DottedLine()),
-              Text("Or",style: TextStyle(color: Colors.white),),
-              Container(width: SizeConfig.screenWidth * 0.35, child: DottedLine())
+              Container(
+                  width: SizeConfig.screenWidth * 0.35, child: DottedLine()),
+              Text(
+                "Or",
+                style: TextStyle(color: Colors.white),
+              ),
+              Container(
+                  width: SizeConfig.screenWidth * 0.35, child: DottedLine())
             ],
           ),
           SizedBox(
@@ -48,7 +73,9 @@ class _LoginFormState extends State<LoginForm> {
           ),
           button(context,
               lable: "Log In",
-              colour: AppColors.authenticationEndBtnColor,colourText: Colors.white,press: (){}),
+              colour: AppColors.authenticationEndBtnColor,
+              colourText: Colors.white,
+              press: () {}),
         ],
       ),
     );

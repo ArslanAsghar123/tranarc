@@ -14,15 +14,13 @@ class CustomPreffixIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(
-
-        right: getProportionateScreenWidth(10)
-      ),
+      padding: EdgeInsets.only(right: getProportionateScreenWidth(10)),
       child: SvgPicture.asset(
         svgIcon,
-       alignment: Alignment.bottomCenter,
-       // height: getProportionateScreenWidth(12),
-        color: AppColors.textfieldIconColor ,
+        alignment: Alignment.bottomCenter,
+         height: 5,
+        width: 5,
+        color: AppColors.textfieldIconColor,
       ),
     );
   }
