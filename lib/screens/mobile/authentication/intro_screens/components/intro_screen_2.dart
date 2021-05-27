@@ -3,8 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:tranarc/utils/constants/colors.dart';
 import 'package:tranarc/utils/constants/size_config.dart';
 
-class Body extends StatelessWidget {
-  const Body({Key key}) : super(key: key);
+class Body2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +33,7 @@ class Body extends StatelessWidget {
               SizedBox(
                 height: SizeConfig.screenHeight * 0.09,
               ),
-              SvgPicture.asset('assets/mobile/images/intro_screen1.svg'),
+              SvgPicture.asset('assets/mobile/images/intro_screen2.svg'),
             ],
           ),
           Positioned.fill(

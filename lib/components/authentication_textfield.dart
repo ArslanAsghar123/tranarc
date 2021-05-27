@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:tranarc/components/custom_prefix_icon.dart';
 import 'package:tranarc/utils/constants/colors.dart';
+import 'package:tranarc/utils/constants/size_config.dart';
 
 TextFormField buildTextFormField(
     {
@@ -31,47 +32,15 @@ TextFormField buildTextFormField(
       fillColor: Colors.white,
       hintStyle: AppColors.kTextfieldTextStyle,
       floatingLabelBehavior: FloatingLabelBehavior.always,
-      prefixIcon: CustomPreffixIcon(
-        svgIcon: svgPic,
+      prefixIcon: Container(
+        padding:  EdgeInsets.only(left: getProportionateScreenWidth(17),bottom: getProportionateScreenHeight(21),top: getProportionateScreenHeight(16)),
+        child: CustomPreffixIcon(
+          svgIcon: svgPic,
 
 
+        ),
       ),
     ),
   );
 }
 
-// TextFormField buildEmailTextFormField() {
-//   return TextFormField(
-//     keyboardType: TextInputType.emailAddress,
-//     onChanged: (val) {},
-//     validator: (val) {},
-//     decoration: InputDecoration(
-//       hintText: 'Email',
-//       filled: true,
-//       fillColor: Colors.white,
-//       hintStyle: AppColors.kTextfieldTextStyle,
-//       floatingLabelBehavior: FloatingLabelBehavior.always,
-//       prefix: CustomPreffixIcon(
-//         svgIcon: "assets/mobile/icons/key.svg",
-//       ),
-//     ),
-//   );
-// }
-//
-// TextFormField buildPasswordTextFormField() {
-//   return TextFormField(
-//     keyboardType: TextInputType.emailAddress,
-//     onChanged: (val) {},
-//     validator: (val) {},
-//     decoration: InputDecoration(
-//       hintText: 'Password',
-//       filled: true,
-//       fillColor: Colors.white,
-//       hintStyle: AppColors.kTextfieldTextStyle,
-//       floatingLabelBehavior: FloatingLabelBehavior.always,
-//       prefix: CustomPreffixIcon(
-//         svgIcon: "assets/mobile/icons/key.svg",
-//       ),
-//     ),
-//   );
-// }

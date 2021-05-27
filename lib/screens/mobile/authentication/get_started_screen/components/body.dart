@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:tranarc/screens/mobile/authentication/get_started_screen/components/login_form.dart';
+import 'package:tranarc/screens/mobile/authentication/get_started_screen/components/signup_form.dart';
+import 'package:tranarc/screens/mobile/authentication/login/components/login_form.dart';
 import 'package:tranarc/utils/constants/colors.dart';
 import 'package:tranarc/utils/constants/size_config.dart';
 

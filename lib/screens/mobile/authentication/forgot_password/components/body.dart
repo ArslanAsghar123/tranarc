@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:tranarc/screens/mobile/authentication/forgot_password/components/forgot_password_form.dart';
 import 'package:tranarc/utils/constants/colors.dart';
 import 'package:tranarc/utils/constants/size_config.dart';
 
@@ -24,7 +25,9 @@ class Body extends StatelessWidget {
               SizedBox(
                 height: SizeConfig.screenHeight * 0.08,
               ),
-              Text("Forgot Password", style: AppColors.kSubTitleTextStyle,)
+              Text("Forgot Password", style: AppColors.kSubTitleTextStyle,),
+              SizedBox(height: SizeConfig.screenHeight * 0.06),
+              ForgotpasswordForm(),
             ],
           ),
         ),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tranarc/screens/mobile/authentication/intro_screens/components/body.dart';
+import 'package:tranarc/screens/mobile/authentication/intro_screens/components/intro_screen_2.dart';
+import 'package:tranarc/screens/mobile/authentication/intro_screens/components/intro_screen_3.dart';
 import 'package:tranarc/utils/constants/colors.dart';
 
 
@@ -19,7 +21,7 @@ class _IntroScreenState extends State<IntroScreen> {
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
-        body: Body(),
+        body: Body3(),
       ),
     );
   }

@@ -96,11 +96,23 @@ class AppColors {
       fontWeight: FontWeight.w400,
       fontSize: 20,
       color: Color(0xffC5D4DD));
+  static const kIntroTitleTextStyle = TextStyle(
+      fontFamily: 'Lato',
+      fontWeight: FontWeight.w400,
+      fontSize: 20,
+      color: Color(0xff3C3C43));
+
   static const kSubTitleTextStyle = TextStyle(
     fontFamily: 'Raleway',
     fontWeight: FontWeight.w800,
     fontSize: 34,
     color: Color(0xffFFFFFF),
+  );
+  static const kIntroSubTitleTextStyle = TextStyle(
+    fontFamily: 'Raleway',
+    fontWeight: FontWeight.w800,
+    fontSize: 34,
+    color: Colors.black,
   );
   static const kTextfieldTextStyle = TextStyle(
     fontFamily: 'Lato',

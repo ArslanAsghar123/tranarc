@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:tranarc/screens/mobile/authentication/login/components/login_form.dart';
 import 'package:tranarc/utils/constants/colors.dart';
 import 'package:tranarc/utils/constants/size_config.dart';
 
@@ -30,7 +31,9 @@ class Body extends StatelessWidget {
               SizedBox(
                 height: SizeConfig.screenHeight * 0.01,
               ),
-              Text("Please Log In", style: AppColors.kSubTitleTextStyle,)
+              Text("Please Log In", style: AppColors.kSubTitleTextStyle,),
+              SizedBox(height: SizeConfig.screenHeight * 0.06),
+              LoginForm(),
             ],
           ),
         ),
