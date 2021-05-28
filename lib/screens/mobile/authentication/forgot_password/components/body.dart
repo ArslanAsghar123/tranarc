@@ -12,11 +12,16 @@ class Body extends StatelessWidget {
     SizeConfig().init(context);
     return SafeArea(
       child: Padding(
+        //region padding to keep all widgets in perfect manner
         padding: EdgeInsets.symmetric(
           horizontal: getProportionateScreenWidth(20),
           vertical: getProportionateScreenHeight(30),
         ),
+        //endregion
+
         child: SingleChildScrollView(
+          //region main column which holds all widgets
+
           child: Column(
             children: [
               Center(
@@ -25,11 +30,15 @@ class Body extends StatelessWidget {
               SizedBox(
                 height: SizeConfig.screenHeight * 0.08,
               ),
-              Text("Forgot Password", style: AppColors.kSubTitleTextStyle,),
+              Text(
+                "Forgot Password",
+                style: AppColors.kSubTitleTextStyle,
+              ),
               SizedBox(height: SizeConfig.screenHeight * 0.06),
               ForgotpasswordForm(),
             ],
           ),
+          //endregion
         ),
       ),
     );

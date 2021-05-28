@@ -5,27 +5,27 @@ import 'package:tranarc/utils/constants/colors.dart';
 import 'package:tranarc/utils/constants/size_config.dart';
 
 TextFormField buildTextFormField(
-    {
-      String hint,
-      String svgPic,
-      Function onChanged,
+    {String hint,
+    String svgPic,
+    Function onChanged,
     Function onValidate,
     TextEditingController myController,
     TextInputFormatter formatter,
-
     bool obsecureText,
     Function onSaved,
-      int maxLength}) {
+      TextInputType keyboardType,
+    int maxLength}) {
   return TextFormField(
     obscureText: obsecureText,
-
     inputFormatters: <TextInputFormatter>[formatter],
     controller: myController,
-    keyboardType: TextInputType.emailAddress,
+    keyboardType: keyboardType,
     onSaved: onSaved,
     onChanged: onChanged,
     maxLength: maxLength,
+    maxLines: 1,
     validator: onValidate,
+    autofocus: true,
     decoration: InputDecoration(
       hintText: hint,
       filled: true,
@@ -33,14 +33,14 @@ TextFormField buildTextFormField(
       hintStyle: AppColors.kTextfieldTextStyle,
       floatingLabelBehavior: FloatingLabelBehavior.always,
       prefixIcon: Container(
-        padding:  EdgeInsets.only(left: getProportionateScreenWidth(17),bottom: getProportionateScreenHeight(21),top: getProportionateScreenHeight(16)),
+        padding: EdgeInsets.only(
+            left: getProportionateScreenWidth(17),
+            bottom: getProportionateScreenHeight(22),
+            top: getProportionateScreenHeight(14)),
         child: CustomPreffixIcon(
           svgIcon: svgPic,
-
-
         ),
       ),
     ),
   );
 }
-

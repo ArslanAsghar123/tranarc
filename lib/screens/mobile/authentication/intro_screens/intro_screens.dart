@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:tranarc/screens/mobile/authentication/intro_screens/components/body.dart';
-import 'package:tranarc/screens/mobile/authentication/intro_screens/components/intro_screen_2.dart';
-import 'package:tranarc/screens/mobile/authentication/intro_screens/components/intro_screen_3.dart';
 import 'package:tranarc/utils/constants/colors.dart';
+
+import 'components/body.dart';
 
 
 class IntroScreen extends StatefulWidget {
@@ -21,7 +20,7 @@ class _IntroScreenState extends State<IntroScreen> {
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
-        body: Body3(),
+        body: Body(),
       ),
     );
   }

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:tranarc/screens/mobile/authentication/get_started_screen/components/signup_form.dart';
-import 'package:tranarc/screens/mobile/authentication/login/components/login_form.dart';
 import 'package:tranarc/utils/constants/colors.dart';
 import 'package:tranarc/utils/constants/size_config.dart';
 
@@ -11,11 +10,16 @@ class Body extends StatelessWidget {
     SizeConfig().init(context);
     return SafeArea(
       child: Padding(
+        //region padding to keep all widgets in perfect manner
         padding: EdgeInsets.symmetric(
           horizontal: getProportionateScreenWidth(20),
           vertical: getProportionateScreenHeight(20),
         ),
+        //endregion
+
         child: SingleChildScrollView(
+
+          //region main column which holds all widgets
           child: Column(
             children: [
               Center(
@@ -36,9 +40,10 @@ class Body extends StatelessWidget {
                 style: AppColors.kSubTitleTextStyle,
               ),
               SizedBox(height: SizeConfig.screenHeight * 0.06),
-              LoginForm(),
+              SignUpForm(),
             ],
           ),
+          //endregion
         ),
       ),
     );

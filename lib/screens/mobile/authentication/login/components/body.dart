@@ -10,13 +10,18 @@ class Body extends StatelessWidget {
     SizeConfig().init(context);
     return SafeArea(
       child: Padding(
-        padding: EdgeInsets.symmetric(
+        //region padding to keep all widgets in perfect manner
+
+      padding: EdgeInsets.symmetric(
           horizontal: getProportionateScreenWidth(20),
           vertical: getProportionateScreenHeight(30),
 
         ),
+        //endregion
         child: SingleChildScrollView(
-          child: Column(
+          //region main column which holds all widgets
+
+        child: Column(
             children: [
               Center(
                 child: SvgPicture.asset('assets/mobile/images/login.svg'),
@@ -36,6 +41,7 @@ class Body extends StatelessWidget {
               LoginForm(),
             ],
           ),
+          //endregion
         ),
       ),
     );
