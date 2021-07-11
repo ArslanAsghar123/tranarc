@@ -1,11 +1,17 @@
+
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 
-ThemeData theme() {
+ThemeData theme(BuildContext context) {
   return ThemeData(
   // appBarTheme: appBarTheme(),
     inputDecorationTheme: inputDecorationTheme(),
     visualDensity: VisualDensity.adaptivePlatformDensity,
+      textTheme: GoogleFonts.poppinsTextTheme(
+        Theme.of(context).textTheme,
+      ),
+      accentColor: Color(0xFFFF1E00)
   );
 }
 
