@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:tranarc/screens/mobile/products/product.dart';
+import 'package:tranarc/screens/mobile/products/screens/home_page.dart';
 import 'package:tranarc/screens/mobile/worker/worker.dart';
 import 'package:tranarc/utils/constants/colors.dart';
 import 'package:tranarc/utils/constants/size_config.dart';
@@ -73,7 +74,7 @@ class Body extends StatelessWidget {
                   InkWell(
                     splashColor: AppColors.carouselActiveSliderColor,
                     onTap: () {
-                      Get.to(ProductScreen());
+                      Get.to(HomePage());
                     },
                     borderRadius: BorderRadius.circular(12),
                     child: Container(

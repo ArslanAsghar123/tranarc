@@ -1,17 +1,13 @@
+import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:tranarc/screens/mobile/authentication/forgot_password/forgot_password_screen.dart';
-import 'package:tranarc/screens/mobile/authentication/intro_screens/intro_screens.dart';
-import 'package:tranarc/screens/mobile/authentication/login/login_screen.dart';
-import 'package:tranarc/screens/mobile/authentication/reset_password/reset_password_screen.dart';
-import 'package:tranarc/screens/mobile/selection_screen/select.dart';
-import 'package:tranarc/theme.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:lottie/lottie.dart';
 
-import 'screens/mobile/authentication/get_started_screen/create_account_screen.dart';
 import 'screens/mobile/products/screens/landing_page.dart';
 
-Future<void> main() async{
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(MyApp());
@@ -24,8 +20,20 @@ class MyApp extends StatelessWidget {
     //region Getx for state management
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: theme(context),
-      home: LandingPage(),
+      theme: ThemeData(
+          textTheme: GoogleFonts.poppinsTextTheme(
+            Theme.of(context).textTheme,
+          ),
+          accentColor: Color(0xFFFF1E00)),
+      home: AnimatedSplashScreen(
+          duration: 3000,
+          splash: Lottie.asset(
+            'assets/mobile/images/splash.json',
+          ),
+          splashIconSize: 200,
+          nextScreen: LandingPage(),
+          splashTransition: SplashTransition.fadeTransition,
+          backgroundColor: Colors.white),
     );
     //endregion
   }

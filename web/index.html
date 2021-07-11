@@ -30,6 +30,25 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-storage.js"></script>
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyCbfmIE_-oWyr74aS4oaGJjJGZvwiNGBOE",
+    authDomain: "mazdori-98bbb.firebaseapp.com",
+    projectId: "mazdori-98bbb",
+    storageBucket: "mazdori-98bbb.appspot.com",
+    messagingSenderId: "234193025079",
+    appId: "1:234193025079:web:306a9017df93279f9c67b2",
+    measurementId: "G-DQ05CYYYGD"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
@@ -40,6 +59,7 @@
       });
     }
   </script>
+
   <script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>

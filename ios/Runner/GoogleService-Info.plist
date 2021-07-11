@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>234193025079-4nkcc04n38k2qobet7doh13c5kf000q8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.234193025079-4nkcc04n38k2qobet7doh13c5kf000q8</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAn6NpyDLzRBrzLdlKyNHFx2lJS0TTryMI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>234193025079</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.tranarc</string>
+	<key>PROJECT_ID</key>
+	<string>mazdori-98bbb</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mazdori-98bbb.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:234193025079:ios:66c4d88fc059e5709c67b2</string>
+</dict>
+</plist>
