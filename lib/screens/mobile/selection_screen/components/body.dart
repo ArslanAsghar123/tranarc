@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:tranarc/screens/mobile/product/screens/home/home_screen.dart';
 import 'package:tranarc/screens/mobile/products/product.dart';
 import 'package:tranarc/screens/mobile/products/screens/home_page.dart';
+import 'package:tranarc/screens/mobile/worker/product/screens/home/home_screen.dart';
 import 'package:tranarc/screens/mobile/worker/screens/home_page.dart';
 import 'package:tranarc/screens/mobile/worker/worker.dart';
 import 'package:tranarc/utils/constants/colors.dart';
@@ -39,7 +40,7 @@ class Body extends StatelessWidget {
                   InkWell(
                     splashColor: AppColors.carouselActiveSliderColor,
                     onTap: () {
-                      Get.to(WorkerScreen());
+                      Get.to(HomeScreen());
                     },
                     borderRadius: BorderRadius.circular(12),
                     child: Container(
