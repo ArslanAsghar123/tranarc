@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "234193025079",
+    "project_id": "mazdori-98bbb",
+    "storage_bucket": "mazdori-98bbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234193025079:android:892540121910e77e9c67b2",
+        "android_client_info": {
+          "package_name": "com.example.tranarc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234193025079-9vl75q7u86jnaev9s8rh5lvi4poln92i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6M1qRKP_LFuQ3eJ2Dhh3gjpC7BtG-RVo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "234193025079-9vl75q7u86jnaev9s8rh5lvi4poln92i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
