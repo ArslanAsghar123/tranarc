@@ -17,7 +17,7 @@ class _RegisterPageState extends State<RegisterPage> {
         context: context,
         barrierDismissible: false,
         builder: (context) {
-          return AlertDialog(
+          return AlertDixalog(
             title: Text("Error"),
             content: Container(
               child: Text(error),
